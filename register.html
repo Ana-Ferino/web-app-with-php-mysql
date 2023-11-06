@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LigaBot</title>
+        <meta charset="UTF-8">
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <link rel="icon" type="image/png" href="img/pandaicon.jpg">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <header class="titleTop">
+            <a class="headerLink" href="about.html">Sobre</a>
+            <a class="headerLink" href="index.html">LigaBot</a>
+            <a class="headerLink" href="register.html">Cadastro</a>
+        </header>
+        <div class="content">
+            <h2 class="titleBottom">Cadastre-se</h2>
+            <div class="register-form">
+                <form method="GET" action="register_action.html" >
+                    <div class="form-group">
+                        <label for="username"><i class="fa fa-user" aria-hidden="true"></i></label>
+                        <input type="text" name="username" id="username" placeholder="Nome de usuário" title="Seu nome de usuário" 
+                        minlength="4" maxlength="16" required>
+                    </div><br>
+                    <div class="form-group">
+                        <label for="psw"><i class="fa fa-key" aria-hidden="true"></i></label>
+                        <input type="password" name="password" id="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,16}" 
+                        minlength="8" maxlength="16" size="16" placeholder="Senha" 
+                        title="Deve conter pelo menos um número, uma letra maiúscula, uma letra minúscula e o total de 8 a 16 caracteres" required>
+                    </div><br>
+                    <div class="form-group">
+                        <label for="email"><i class="fa fa-envelope" aria-hidden="true"></i></label>
+                        <input type="email" name="email" id="email" placeholder="Email" title="Seu e-mail" required>
+                    </div><br>
+                    <div class="form-group">
+                        <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" required />
+                        <label for="agree-term" class="label-agree-term"><span><span></span></span>Eu concordo com os <a href="terms.html" class="term-service">termos de serviço</a></label>
+                    </div><br>
+                    <div class="form-group form-button">
+                        <input type="submit" class="form-submit" value="Cadastrar-se"> 
+                    </div>
+                </form>
+            </div>
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    const senhaInput = document.getElementById('psw');
+        
+                    senhaInput.addEventListener('blur', function() {
+                        const regex = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,16}/;
+                        const senha = this.value;
+        
+                        if (!regex.test(senha)) {
+                            alert('A senha deve conter pelo menos um número, uma letra maiúscula, uma letra minúscula e o total de 8 a 16 caracteres');
+                        }
+                    });
+                });
+            </script>
+        </div>
+    </body>
+</html>
