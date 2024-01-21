@@ -40,7 +40,7 @@
         $conn->close();
     ?>
     <header class="titleTop">
-        <a class="headerLink" href="login.php">LigaBot</a>
+        <a class="headerLink" href="login.php">Home</a>
         <a class="headerLink" href="register.html">Cadastro</a>
     </header>
     <div class="content">
