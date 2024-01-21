@@ -1,29 +1,39 @@
-# Sistema de cadastro e modificação de usuários
+# Sistema de cadastro de usuário
 
-## Visão Geral
+Desenvolvido in vanilla mode, este sistema foi projetado para permitir o cadastro, o login e a adição de informações do usuário diretamente no banco MySQL. *
 
-Este projeto está em desenvolvimento e atualmente foca no desenvolvimento do frontend. Consiste em três telas principais:
+Este sistema consiste em três telas:
 
 1. **Tela inicial/Login**: Permite que os usuários autentiquem-se no sistema.
-2. **Sobre**: Fornece uma descrição do objetivo e propósito do projeto.
-3. **Cadastro**: Solicita informações de usuário, senha e email para registro.
+2. **Cadastro**: Solicita informações de usuário, senha e email para registro.
+3. **Perfil**: Exibe e permite a alteração das informações do perfil do usuário logado.
 
-O objetivo final é criar um sistema completo que permita o gerenciamento eficiente de dados de usuários, utilizando tecnologias como HTML, CSS, JavaScript, PHP e MySQL.
+*Este projeto foi desenvolvido com o propósito de aprendizado e demonstração.
 
-<img src="img/front_exemplo2.gif" width="900" height="700"/>
+<img src="img/front_2.gif" width="800" height="600"/>
 
-## Funcionalidades Futuras (A serem Implementadas)
+## Iniciando
 
-- Backend para processamento e armazenamento de dados.
-- Funcionalidades de autenticação e autorização.
-- Integração com banco de dados SQL para persistência de informações de usuários.
+### Pré-requisitos
+Requisito para executar o software:
 
-## Como Testar
+- `XAMPP` v3.3.0
 
-1. Clone o repositório para sua máquina local.
-2. Abra os arquivos HTML no seu navegador web para interagir com as telas existentes.
+## Configurando o ambiente
+1. Clone o repositório dentro de `\xampp\htdocs` na sua máquina:
+ ```sh
+ $ git clone https://github.com/{your-username}/web-app-with-php-mysql.git
+ ```
 
-**Observação:** O backend e a funcionalidade completa do sistema estão em desenvolvimento e serão adicionados posteriormente.
+2. [Configure](https://www.javatpoint.com/creating-mysql-database-with-xampp) o banco de dados com o XAMPP
+
+3. Defina as suas variáveis de acesso ao banco no arquivo `connectDB.php` dentro deste projeto
+
+4. Crie as tabelas usando o template disponível dentro da pasta `database` deste projeto
+
+## Executando
+
+Inicialize o `MySQL` e o `Apache` no XAMPP Control Panel e pronto! Agora acesse pelo localhost e a aplicação deverá estar funcionando.
 
 ## Contribuições
 
