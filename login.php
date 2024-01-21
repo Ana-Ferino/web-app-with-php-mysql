@@ -17,7 +17,6 @@
         }
         ?>
         <header class="titleTop">
-            <a class="headerLink" href="about.html">Sobre</a>
             <a class="headerLink" href="login.php">LigaBot</a>
             <a class="headerLink" href="register.html">Cadastro</a>
         </header>
